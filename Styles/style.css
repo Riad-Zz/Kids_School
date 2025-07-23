@@ -159,10 +159,90 @@
     transform: scale(1.04);
     background-color:rgb(81, 155, 187) ;
 }
+
+/* Our-Stories-Section Style  */
+.Our-Stories-Section{
+    background-image:url(../Assets/bg.png) ,linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%) ;
+}
+.story-card-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 19px;
+}
+.story-card{
+    background-color: white;
+    border-radius: 16px;
+}
+.story-card img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+.story-card-big{
+    grid-row: span 2;
+}
+.story-card-big h4{
+    margin-top: 45px;
+    padding: 0 30px;
+    max-width: 402px;
+}
+.story-card-big p{
+    margin-top: 20px;
+    padding: 0 30px;
+    max-width: 433px;
+    margin-bottom: 30px;
+}
+.big-card-info{
+    position: relative;
+}
+.big-story-card-btn{
+    border: none;
+    display: block;
+    padding: 15px 19px;
+    border-radius: 48px;
+    font-weight: 500;
+    font-size: 0.97rem;
+    position: absolute;
+    background-color: rgba(60, 216, 232, 1);
+    left: 38px;
+    top: -80px;
+}
+.small-card-title{
+    max-width: 198px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: rgba(0, 0, 0, 1);
+    padding: 30px 54px 33px 37px;
+}
+.card-info{
+    position: relative;
+}
+.small-card-btn{
+    border: none;
+    border-radius: 48px;
+    padding: 9.5px 18px 10.5px 19px;
+    background-color: rgba(149, 178, 38, 1);
+    font-weight: 500;
+    font-size: 0.98rem;
+    position: absolute;
+    left: 19px;
+    top: -30px;
+    text-align: center;
+}
+.small-card-btn2{
+    background-color: rgba(93, 88, 240, 1);
+}
+.story-sec-btn{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.story-btn{
+    background-color: black;
+    padding: 15px 50px ;
+}
 /* Mobile Devices Style  */
 @media screen and (max-width:576px) {
     
-    .middle-links,.right-btn,.logo-text,.arrows{
+    .middle-links,.right-btn,.logo-text,.arrows,.story-card-big{
         display: none;
     }
     .navigation-bar{
@@ -196,12 +276,26 @@
         border-radius: 8px;
         font-size: 1rem;
     }
+    
     .curriculam-card-caontainer{
         flex-direction: column;
         width: 95%;
         margin: 0 auto;
     }
-
-
+    .story-card-container{
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        margin: 0px auto;
+        column-gap: 10px;
+    }
+    .story-card{
+        width: 93%;
+    }
+    
+    .Our-Stories-Section{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
     
 }
