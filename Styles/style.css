@@ -296,6 +296,11 @@
         width: 100%;
         margin: 0 auto;
     }
-    
-    
+    .small-card-title{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .small-card-btn{
+        left: 3px;
+    }
 }
