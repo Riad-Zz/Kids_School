@@ -1,0 +1,124 @@
+/* Universal style */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Shared Style  */
+.font-quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.flex{
+    display: flex;
+}
+.max-width{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.btn{
+    color:rgba(255, 255, 255, 1) ;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 10px 61px;
+    background-color:Orange ;
+    border-radius: 12px;
+    border: none;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+
+/* Heading Section Style */
+/* NAvigation-bar Style  */
+.navigation-bar{
+    justify-content: space-evenly;
+    gap: 186px;
+    margin-top: 20px ;
+    align-items: center;
+}
+.left-logo {
+    align-items: center;
+    font-weight: 700;
+    font-size: 32px;
+    gap: 11px;
+}
+.items{
+    list-style: none;
+    gap: 32px;
+}
+.items a{
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.item-1 a{
+    font-weight: 700;
+    color: orange;
+}
+.common-weight{
+    font-weight: 500;
+}
+
+
+/* banner Section  Style*/
+.banner-section{
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-text{
+    max-height: 640px;
+}
+.title{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.semi-title{
+    font-size: 1.25rem;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.banner-btn{
+    background-color: black;
+}
+
+/* Mobile Devices Style  */
+@media screen and (max-width:576px) {
+    
+    .middle-links,.right-btn,.logo-text{
+        display: none;
+    }
+    .navigation-bar{
+        justify-content: space-between;
+        gap: 0px;
+        margin: 20px;
+    }
+    .menu-bar,hr{
+        display: block !important;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-image img{
+        width: 92%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .semi-title{
+        font-weight: 500;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .banner-btn{
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+}
