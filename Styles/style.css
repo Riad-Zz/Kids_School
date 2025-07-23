@@ -101,6 +101,10 @@
     gap: 28px;
 }
 .base-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     box-shadow: 0 0 28.3px  rgba(0, 0, 0, 0.05);
     border-radius: 18.9px;
     padding: 52px 40px ;
@@ -110,8 +114,14 @@
 .base-card:hover{
     transform: scale(1.03);
 }
-.base-card > *{
+
+/* .base-card > *{
     margin-bottom: 33px;
+} */
+.base-card img{
+    height: 140px;
+    width: 140px;
+    margin: 0 auto;
 }
 .kinder-card{
     background-image: linear-gradient(rgba(222, 245, 255, 1),rgba(255, 255, 255, 0));
@@ -288,7 +298,11 @@
         border-radius: 8px;
         font-size: 1rem;
     }
-    
+    .base-card img{
+    height: 93px;
+    width: 93px;
+    margin: 0 auto;
+}
     .curriculam-card-caontainer{
         flex-direction: column;
         width: 95%;
@@ -309,10 +323,34 @@
         margin: 0 auto;
     }
     .small-card-title{
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 50px 20px 20px 10px;
+
     }
     .small-card-btn{
         left: 3px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    
+    .middle-links{
+        display: none;
+    }
+    .right-btn{
+        margin-right: 20px ;
+    }
+    .navigation-bar{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .base-card{
+        padding: 15px;
+    }
+    .small-card-title{
+        padding: 50px 30px 33px 30px;
     }
 }
